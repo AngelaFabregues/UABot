@@ -18,13 +18,13 @@ difference(){
         translate([12,3.5,-0.1]){ // forat per un pern M2
             cylinder(20,1.5,1.5,false);
             translate([0,0,12]){ // ranura per femella pern M2
-                Hexagone(cle=5,h=3);
+                Hexagone(cle=4.5,h=3);
             }
         }
         translate([12,20,-0.1]){ // forat per un pern M2
             cylinder(20,1.5,1.5,false);
             translate([0,0,12]){ // ranura per femella pern M2
-                Hexagone(cle=5,h=3);
+                Hexagone(cle=4.5,h=3);
             }
         }
 
