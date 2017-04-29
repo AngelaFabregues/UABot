@@ -17,10 +17,12 @@ cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
     }
     union(){ // forats cables dels motors
         translate([0,23,0]){
-            cube(size = [7,4,4], center = true);
+//            cube(size = [7,4,4], center = true);
+            cube(size = [5.5,2.5,4], center = true);
         }
         translate([0,-23,0]){
-            cube(size = [7,4,4], center = true);
+//            cube(size = [6,3,4], center = true);
+            cube(size = [5.5,2.5,4], center = true);
         }
     }
     union(){ // forats perns M3 per suggectar controlador motor
