@@ -1,26 +1,26 @@
 // Capa control amb forats per suggectar a placa base, forats per cables dels motors, forats per suggectar controllador motor
 difference(){
-cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
+    cylinder(h = 1, r1 = 45, r2 = 45, center = true); // capa
     union(){ // forats perns M3 per suggectar a capa base
         translate([22,32,0]){
-            cylinder(h = 4, r1 = 2, r2 = 2, center = true);
+            cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true);
         }
         translate([22,-32,0]){
-            cylinder(h = 4, r1 = 2, r2 = 2, center = true);
+            cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true);
         }
         translate([-22,32,0]){
-            cylinder(h = 4, r1 = 2, r2 = 2, center = true);
+            cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true);
         }
         translate([-22,-32,0]){
-            cylinder(h = 4, r1 = 2, r2 = 2, center = true); 
+            cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true); 
         }
     }
     union(){ // forats cables dels motors
-        translate([0,23,0]){
+        translate([20,23,0]){
 //            cube(size = [7,4,4], center = true);
             cube(size = [5.5,2.5,4], center = true);
         }
-        translate([0,-23,0]){
+        translate([20,-23,0]){
 //            cube(size = [6,3,4], center = true);
             cube(size = [5.5,2.5,4], center = true);
         }
@@ -28,16 +28,55 @@ cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
     union(){ // forats perns M3 per suggectar controlador motor
         translate([10,0,0]){
             translate([0,9,0]){
-                cylinder(h = 4, r1 = 2, r2 = 2, center = true);
+                cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true);
             }
-            translate([0,-9,0]){
-                cylinder(h = 4, r1 = 2, r2 = 2, center = true); 
+/*            translate([0,-9,0]){
+                cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true); 
             }
             translate([13,9,0]){
-                cylinder(h = 4, r1 = 2, r2 = 2, center = true);
-            }
+                cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true);
+            }*/
             translate([13,-9,0]){
-                cylinder(h = 4, r1 = 2, r2 = 2, center = true); 
+                cylinder(h = 4, r1 = 1.5, r2 = 1.5, center = true); 
+            }
+        }
+    }
+    translate([-11,-22.5,0]){ // forat cables micro interruptor i alimentació
+         cube(size = [12,5,4], center = true);
+    }
+    translate([-11,22.5,0]){ // forat cables micro interruptor i alimentació
+         cube(size = [12,5,4], center = true);
+    }
+}
+        translate([10,0,2]){
+            translate([0,-9,0]){
+                cylinder(h = 3, r1 = 1.5, r2 = 1.5, center = true); 
+            }
+            translate([13,9,0]){
+                cylinder(h = 3, r1 = 1.5, r2 = 1.5, center = true);
+            }
+        }
+rotate([0,0,135]){
+    translate([1,42.5,2]){
+        union(){ // support micro interruptor
+            difference(){
+                translate([0,-3,0]){ // suport
+                    cube(size = [12,10,5], center = true);
+                }
+                translate([0,1,1]){
+                    cube(size = [8.3,6,5], center = true); // forat principal
+                    translate([0,-5,2]){ // forats cables
+                        translate([0,0,0]){
+                            cube(size = [1.6,15,7.5], center = true);
+                        }
+                        translate([-2.5,0,0]){
+                            cube(size = [1.6,15,7.5], center = true);
+                        }
+                        translate([2.5,0,0]){
+                            cube(size = [1.6,15,7.5], center = true);
+                        }
+                    }
+                }
             }
         }
     }
