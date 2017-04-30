@@ -2,8 +2,8 @@
 
 h_base=2;
 h_cilindre=7.5;
-r_cilindre=7;
-d_esfera=11;
+r_cilindre=7.25;
+d_esfera=10;
 difference(){
     
     union(){
@@ -13,7 +13,7 @@ difference(){
         }
     }
     translate([0,0,h_base/2+h_cilindre/2+1]){
-        cube([14,3,h_cilindre+2], center=true);
+        cube([r_cilindre*2,2.5,h_cilindre+2], center=true);
             sphere(d=10);
     }
     translate([0,0,h_base/2+d_esfera/2]){
