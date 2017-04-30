@@ -88,12 +88,12 @@ rotate([180,0,-48]){ // interruptor baix
     translate([1,42.5,2]){
         union(){ // support micro interruptor
             difference(){
-                translate([0,-3,2]){ // suport
-                    cube(size = [12,10,7], center = true);
+                translate([0,-3,1]){ // suport
+                    cube(size = [12,10,6], center = true);
                 }
                 translate([0,1,1]){
                     cube(size = [8.5,6,6], center = true); // forat principal
-                    cube(size = [8.3,6,10], center = true); // forat principal
+//                    cube(size = [8.3,6,10], center = true); // forat principal
                     translate([0,-5,0.75]){ // forats cables
                         translate([0,0,0]){
                             cube(size = [1.6,15,5], center = true);
@@ -104,7 +104,7 @@ rotate([180,0,-48]){ // interruptor baix
                         translate([2.5,0,0]){
                             cube(size = [1.6,15,5], center = true);
                         }
-                        translate([0,0,2]){
+/*                        translate([0,0,2]){
                             translate([0,0,0]){
                                 cube(size = [1.4,15,8], center = true);
                             }
@@ -115,6 +115,7 @@ rotate([180,0,-48]){ // interruptor baix
                                 cube(size = [1.4,15,8], center = true);
                             }
                         }
+*/
                     }
                 }
             }
