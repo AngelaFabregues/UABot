@@ -5,9 +5,9 @@ module letter(l,s,h) {
 	}
 }
 
-module suport_bola(x,y,z){
+module suport_bola(t){
 // suport bola de lliure moviment tamany 9.5 mm diametre
-    translate([x,y,z]){
+    translate(t){
         h_base=2;
         h_cilindre=7.5;
         r_cilindre=7.25;
@@ -33,8 +33,8 @@ difference(){
     union(){
         cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
         rotate([180,0,0]){
-            suport_bola(38,0,0);
-            suport_bola(-38,0,0);
+            suport_bola([38,0,0]);
+            suport_bola([-38,0,0]);
         }
     }
     union(){ // ranures per a rodes
