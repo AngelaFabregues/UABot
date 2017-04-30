@@ -2,8 +2,10 @@
 
 h_base=2;
 h_cilindre=7.5;
-r_cilindre=7.25;
-d_esfera=10;
+r_cilindre=7.25; // el resultat és similar a una de les dues impressions que tenim
+//d_esfera=11; // massa ample, no s'aguanta, però la separació era 3, no 2.5
+//d_esfera=10; // massa estret
+d_esfera=10.5;
 difference(){
     
     union(){
