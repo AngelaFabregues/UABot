@@ -24,8 +24,8 @@ union(){
     }        
     difference(){
         cylinder(h=7,d=10);
-        translate([0,0,-1]){
-            cylinder(h=9,d=d_eje);
+        translate([0,0,1]){ // tope al forat de l'eix de la roda
+            cylinder(h=8.5,d=d_eje); // forat eix roda
         }
     }
     translate([1.20,-2,0]){
