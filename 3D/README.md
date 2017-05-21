@@ -1,7 +1,5 @@
 # UABot - 3D
-El disseny dels components imprimibles s'ha realitzat amb diverses eines de disseny 3D com ara:
-* FreeCAD
-* Blender
+El disseny dels components imprimibles s'ha realitzat íntegrament amb OpenScad. Això facilita la seva visualització i modificació.
 
 ## Impressió
 
