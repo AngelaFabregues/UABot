@@ -46,20 +46,21 @@ difference(){
         }
     }
     union(){ // forats per a support motor
+        foratPernM2=1.5;
         translate([0,26,0]){
             translate([8.5,0,0]){
-                cylinder(h = 4, r1 = 1, r2 = 1, center = true);
+                cylinder(h = 4, r1 = foratPernM2, r2 = foratPernM2, center = true);
             }
             translate([-8.5,0,0]){
-                cylinder(h = 4, r1 = 1, r2 = 1, center = true);
+                cylinder(h = 4, r1 = foratPernM2, r2 = foratPernM2, center = true);
             }
         }
         translate([0,-26,0]){
             translate([8.5,0,0]){
-                cylinder(h = 4, r1 = 1, r2 = 1, center = true);
+                cylinder(h = 4, r1 = foratPernM2, r2 = foratPernM2, center = true);
             }
             translate([-8.5,0,0]){
-                cylinder(h = 4, r1 = 1, r2 = 1, center = true);
+                cylinder(h = 4, r1 = foratPernM2, r2 = foratPernM2, center = true);
             }
         }
     }
