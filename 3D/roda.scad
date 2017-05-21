@@ -1,7 +1,6 @@
-// Rueda de 32mm (con junta tórica) para Sapoconcho
-// o cualquier micromotor de 3mm de eje
+// Roda de 32mm (amb junta tòrica) i tope per a micromotor de 3mm de eix
 $fn=60;
-d_eje=3.7;
+d_eje=3.6;
 r_ext=15.5;
 
 union(){
