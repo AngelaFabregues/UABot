@@ -20,11 +20,11 @@ module suportMicroInterruptor(t,r){
                             translate([0,0,0]){
                                 cube(size = [1.6,15,5], center = true);
                             }
-                            translate([-2.5,0,0]){
-                                cube(size = [1.6,15,5], center = true);
+                            translate([-2.7,0,0]){
+                                cube(size = [2,15,5], center = true);
                             }
-                            translate([2.5,0,0]){
-                                cube(size = [1.6,15,5], center = true);
+                            translate([2.7,0,0]){
+                                cube(size = [2,15,5], center = true);
                             }
     /*                        translate([0,0,2]){
                                 translate([0,0,0]){
