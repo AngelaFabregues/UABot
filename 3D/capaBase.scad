@@ -29,6 +29,7 @@ module suport_bola(t){
         }
     }
 }
+rotate([180,0,0]){
 difference(){
     union(){
         cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
@@ -91,4 +92,5 @@ difference(){
             }
         }
     }
+}
 }

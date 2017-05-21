@@ -46,6 +46,7 @@ module suportMicroInterruptor(t,r){
     }
 }
 
+rotate([180,0,0]){
 difference(){
     cylinder(h = 2, r1 = 45, r2 = 45, center = true); // capa
     union(){ // forats perns M3 per suggectar a capa base
@@ -136,3 +137,4 @@ translate([10,0,2]){// pilars suggectar controlador motor
 
 //suportMicroInterruptor([1,42.5,3],[0,0,135]); // interruptor dalt
 suportMicroInterruptor([1,42.5,3],[180,0,-50]); // interruptor baix
+}

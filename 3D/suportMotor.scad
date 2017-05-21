@@ -1,5 +1,5 @@
 // Suport del motor amb ranura per a enganxar cable, tope pel motor, solapa tope per a la goma, ranures per a encaixar femelles
-
+rotate([180,0,0]){
 difference(){
     union(){
         cube([18,24,12]); // volum principal
@@ -44,6 +44,7 @@ difference(){
 
         
     }
+}
 }
 
 //============================================================
