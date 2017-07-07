@@ -14,8 +14,7 @@ ESP8266WebServer server(80);
 
 void handleRoot() {
 i++;
-server.send(200, "text/html", "<h1>You are connected "+String(i)+"</h1><a href=\"/run\">RUN</a><br><a href=\"/stop\">STOP</>
-a>");
+server.send(200, "text/html", "<h1>You are connected "+String(i)+"</h1><a href=\"/run\">RUN</a><br><a href=\"/stop\">STOP</a>");
 
 }
 
